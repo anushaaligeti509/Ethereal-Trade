@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Shipment</title>
+</head>
+<body>
+    <h1>Create Shipment</h1>
+    <form id="create-shipment-form">
+        <label for="receiver">Receiver Address:</label><br>
+        <input type="text" id="receiver" name="receiver"><br>
+        
+        <label for="amount">Amount:</label><br>
+        <input type="number" id="amount" name="amount"><br>
+        
+        <button type="button" onclick="createShipment()">Create Shipment</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"></script>
+    <script>
+        async function createShipment() {
+            const receiver = document.getElementById('receiver').value;
+            const amount = document.getElementById('amount').value;
+
+            // Call the JavaScript function to interact with the contract
+            await createShipmentOnBlockchain(receiver, amount);
+        }
+
+        async function createShipmentOnBlockchain(receiver, amount) {
+            if (typeof window.ethereum !== 'undefined') {
+                const web3 = new Web3(window.ethereum);
+
+                try {
+                    // Request account access
+                    await window.ethereum.request({ method: 'eth_requestAccounts' });
+                    const accounts = await web3.eth.getAccounts();
+                    const account = accounts[0];
+
+                    console.log('Connected account:', account);
+
+                    const contractAddress = '0x49ba8889cf16892a9b1fb215382bd288f92cf7bf'; // Replace with your contract address
+                    const abi = [
+                        {
+                            "constant": false,
+                            "inputs": [{"name": "_receiver", "type": "address"}, {"name": "_amount", "type": "uint256"}],
+                            "name": "createShipment",
+                            "outputs": [],
+                            "payable": false,
+                            "stateMutability": "nonpayable",
+                            "type": "function"
+                        }
+                    ];
+
+                    const contract = new web3.eth.Contract(abi, contractAddress);
+
+                    // Call createShipment function
+                    await contract.methods.createShipment(receiver, amount).send({ from: account });
+
+                    alert("Shipment Created");
+                    console.log('Shipment created');
+
+                } catch (error) {
+                    console.error('Error connecting to MetaMask:', error);
+                    alert('Failed to connect to MetaMask. Please ensure that it is installed and that you are logged in.');
+                }
+            } else {
+                alert('Please install MetaMask!');
+            }
+        }
+    </script>
+</body>
+</html>

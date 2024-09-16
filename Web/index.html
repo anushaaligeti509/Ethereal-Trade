@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/web3@1.0.0/dist/web3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"></script>
+        <title>EtherealTrade</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo.jpg" alt="" class="nav__logo-img">
+                    EtherealTrade
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About Us</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#trick" class="nav__link">Our Team</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">Our Services</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#marketoppo" class="nav__link">Market Opportunities</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#security" class="nav__link">Security</a>
+                        </li>
+                        <!-- <a href="#" class="button button--ghost">Security</a> -->
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <img src="assets/img/nav-img.png" alt="" class="nav__img">
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home container" id="home">
+                <div class="swiper home-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- HOME SLIDER 1 -->
+                        <section class="swiper-slide">
+                            <div class="home__content grid">
+                                <div class="home__group">
+                                    <img src="assets/img/logo.jpg" alt="" class="home__img">
+                                    <div class="home__indicator"></div>
+    
+                                    <div class="home__details-img">
+                                        <h4 class="home__details-title">"Trade Chain Token"</h4>
+                                        <span class="home__details-subtitle">TCT - Utility Token</span>
+                                    </div>
+                                </div>
+    
+                                <div class="home__data">
+                                    <h1 class="home__title">Welcome to EtherealTrade <br> </h1>
+                                    <p class="home__description">Say goodbye to delays and paperwork headaches. Our advanced blockchain solution, powered by smart contracts and TradeChain Tokens (TCT), is here to simplify your logistics experience.
+                                        Enjoy the benefits of real-time updates, faster transactions, and streamlined documentation. Whether you're a small business or a global enterprise, EtherealTrade is your partner for seamless trade operations.
+                                        Ready to revolutionize the way you do business? Join us at EtherealTrade and elevate your global trade game.                                        
+                                    </p>
+
+                                    <div class="home__buttons" id="walletStatus">
+                                        <a href="#" class="button" id="connect-btn">Connect Wallet</a>
+                                        <span id="walletConnected" style="display:none;"><img src="assets/img/green-check.png" alt="Connected" /></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- HOME SLIDER 2 -->
+                        <section class="swiper-slide">
+                            <div class="home__content grid">
+                                <div class="home__group">
+                                    <img src="assets/img/corevalues.jpeg" alt="" class="home__img">
+                                    <!-- <div class="home__indicator"></div> -->
+    
+                                    <!-- <div class="home__details-img">
+                                        <h4 class="home__details-title">Adino & Grahami</h4>
+                                        <span class="home__details-subtitle">No words can describe them</span>
+                                    </div> -->
+                                </div>
+    
+                                <div class="home__data">
+                                    <!-- <h3 class="home__subtitle">#2 top Best duo</h3> -->
+                                    <h1 class="home__title">CORE VALUES</h1>
+                                    <p>
+                                        <h3 class=""home__subtitle>Innovation</h3>
+                                        <h3 class=""home__subtitle>Integrity</h3>
+                                        <h3 class=""home__subtitle>Collaboration</h3>
+                                        <h3 class=""home__subtitle>Accessibility</h3>
+                                        <h3 class=""home__subtitle>Impact</h3>
+
+                                    </p>
+                                    <!-- <p class="home__description">
+                                        <ul>
+                                            <li>Innovation</li>
+                                            <li>Integrity</li>
+                                            <li>Collaboration</li>
+                                            <li>Accessibility</li>
+                                            <li>Impact</li>
+                                        </ul>
+                                    </p> -->
+
+                                    <!-- <div class="home__buttons">
+                                        <a href="#" class="button">Book Now</a>
+                                        <a href="#" class="button--link button--flex">Track Record <i class='bx bx-right-arrow-alt button__icon'></i></a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- HOME SLIDER 3 -->
+                        <section class="swiper-slide">
+                            <div class="home__content grid">
+                                <div class="home__group">
+                                    <img src="assets/img/FutureOutlook.jpeg" alt="" class="home__img">
+                                    <!-- <div class="home__indicator"></div>
+    
+                                    <div class="home__details-img">
+                                        <h4 class="home__details-title">Captain Sem</h4>
+                                        <span class="home__details-subtitle">Veteran Spooky Ghost</span>
+                                    </div> -->
+                                </div>
+    
+                                <div class="home__data">
+                                    <!-- <h3 class="home__subtitle">#3 Top Scariest  Ghost</h3> -->
+                                    <h1 class="home__title">FUTURE OUTLOOK</h1>
+                                    <p class="home__description">As we continue to grow and expand our platform, 
+                                        we envision EtherealTrade becoming the go-to solution for businesses engaged in international trade. 
+                                        With ongoing innovation and a commitment to our core values, 
+                                        we're poised to shape the future of global commerce
+                                    </p>
+
+                                    <!-- <div class="home__buttons">
+                                        <a href="#" class="button">Book Now</a>
+                                        <a href="#" class="button--link button--flex">Track Record <i class='bx bx-right-arrow-alt button__icon'></i></a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div><br><br>
+                <section id="hero">
+                    <h2 class="section__title about__title">Welcome to Our Token Launch!</h2>
+                    <p id="contract-title">TradeChain Token (TCT)</p>
+                    <p class="about__description">Total Supply: <span id="total-supply-el">0</span> tokens</p>
+                    <p class="about__description">Your Balance: <span id="user-balance-el">0</span> tokens</p>
+                    <p class="about__description">Shipment Current Status: <span id="shipment-curr-status">None</span> </p>
+                    <p id="feedback-msg" class="about__description"></p>
+                    <p class="about__description" id="error-msg" style="color: red;"></p>
+                </section><br><br>
+                <p class="about__description">Shipment Current Status: <span id="shipment-curr-status">None</span> </p>
+                    <div class="about__description">
+                        <p>Create Shipment:</p>
+                        <input class="newsletter__input" type="text" id="receiverAddress" placeholder="Receiver Address"><br>
+                        <input class="newsletter__input" type="number" id="shipmentAmount" placeholder="Shipment Amount"><br>
+                        <br><br><div class="home__buttons">
+                            <a href="#" class="button" id="shipcreate-btn">Create Shipment</a>
+                        </div>  <br><br>
+                        <p>Update Shipment Status:</p>
+                        <input  class="newsletter__input" type="number" id="shipmentId" placeholder="Shipment ID"><br>
+                        <select class="newsletter__input" id="statusSelect">
+                            <option value="Pending">Pending</option>
+                            <option value="InTransit">InTransit</option>
+                            <option value="Delivered">Delivered</option>
+                        </select><br>
+                        <br><br><div class="home__buttons">
+                            <a href="#" class="button" id="update-status-btn">Update Status</a>
+                        </div>    
+                    </div>
+                    
+                <div>
+                    <h2 class="section__title about__title">How EtherealTrade Simplifies Your Trading Experience?</h2>
+                    <p class="about__description">
+                        Discover how EtherealTrade effortlessly connects all parties in the trading process. 
+                        Once you input your shipment details, our platform leverages blockchain technology to secure and 
+                        streamline every transaction. Exporters have the assurance of smart contracts for clear, 
+                        enforceable terms, while importers enjoy instant verification and payment upon scanning incoming goods - 
+                        no delays, no hassles. Logistics providers benefit from our comprehensive tracking system, 
+                        ensuring they can monitor and manage shipments with unprecedented ease. With EtherealTrade, 
+                        the complexities of global logistics are simplified, allowing every participant to focus on what they 
+                        do best. Join us to leverage cutting-edge technology that makes international trading not just easier, 
+                        but smarter and more secure.
+                    </p>
+                </div>
+            </section>
+            
+            <!--==================== CATEGORY ====================-->
+            <!-- <section class="section category">
+                <h2 class="section__title">Favorite Scare <br> Category</h2>
+
+                <div class="category__container container grid">
+                    <div class="category__data">
+                        <img src="assets/img/category1-img.png" alt="" class="category__img">
+                        <h3 class="category__title">Ghosts</h3>
+                        <p class="category__description">Choose the ghosts, the scariest there are.</p>
+                    </div>
+
+                    <div class="category__data">
+                        <img src="assets/img/category2-img.png" alt="" class="category__img">
+                        <h3 class="category__title">Pumpkins</h3>
+                        <p class="category__description">You look at the scariest pumpkins there is.</p>
+                    </div>
+
+                    <div class="category__data">
+                        <img src="assets/img/category3-img.png" alt="" class="category__img">
+                        <h3 class="category__title">Witch Hat</h3>
+                        <p class="category__description">Pick the most stylish witch hats out there.</p>
+                    </div>
+                </div>
+            </section> -->
+
+            <!--==================== ABOUT ====================-->
+            <section class="section about" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">VISION</h2>
+                        <p class="about__description">To revolutionize global trade by eliminating traditional complexities and 
+                            inefficiencies through blockchain technology. Our vision is a seamless, transparent, and 
+                            universally accessible trading environment where all businesses, regardless of size or geographic location, 
+                            can thrive without the burdens of outdated procedures and excessive paperwork.
+                        </p>
+                        <h2 class="section__title about__title">MISSION</h2>
+                        <p class="about__description">At EtherealTrade, our mission is to tackle the challenges of modern international logistics 
+                            head-on by simplifying and securing every aspect of the trading process. By integrating smart contracts and our proprietary 
+                            TradeChain Tokens (TCT), we aim to dramatically reduce waiting times, minimize documentation, and 
+                            ensure transactional transparency and security. Our commitment is to empower traders worldwide 
+                            with a platform that supports rapid, reliable, and efficient trade operations, 
+                            transforming how businesses interact across borders and driving global economic growth.
+
+                        </p>
+                    </div>
+
+                    <img src="assets/img/aboutusbg.jpeg" alt="" class="about__img">
+                </div>
+            </section>
+
+            <!--==================== TEAM ====================-->
+            <section class="section trick" id="trick">
+                <h2 class="section__title">OUR TEAM</h2>
+
+                <div class="trick__container container grid">
+                    <div class="trick__content">
+                        <img src="assets/img/Srini.jpeg" alt="" class="trick__img">
+                        <h3 class="trick__title">Srinidhi Reddy</h3>
+                        <span class="trick__subtitle">Front-End Developer</span>
+                        <!-- <button class="button trick__button">
+                            <i class='bx bx-cart-alt trick__icon'></i>
+                        </button> -->
+                    </div>
+
+                    <div class="trick__content">
+                        <img src="assets/img/trick-treat6-img.png" alt="" class="trick__img">
+                        <h3 class="trick__title">Navneeth Orunganti</h3>
+                        <span class="trick__subtitle">Front-End Developer</span>
+                        <!-- <span class="trick__price">$8.99</span> -->
+                        <!-- <button class="button trick__button">
+                            <i class='bx bx-cart-alt trick__icon'></i>
+                        </button> -->
+                    </div>
+
+                    <div class="trick__content">
+                        <img src="assets/img/Raxy.jpeg" alt="" class="trick__img">
+                        <h3 class="trick__title">Rakshanda Hedawoo</h3>
+                        <span class="trick__subtitle">Front-End Developer</span>
+                        <!-- <span class="trick__price">$15.99</span>
+                        <button class="button trick__button">
+                            <i class='bx bx-cart-alt trick__icon'></i>
+                        </button> -->
+                    </div>
+
+                    <div class="trick__content">
+                        <img src="assets/img/Srinivas.jpg" alt="" class="trick__img">
+                        <h3 class="trick__title">Srinivas Chintalapati</h3>
+                        <span class="trick__subtitle">Back-End Developer</span>
+                        <!-- <span class="trick__price">$7.99</span>
+                        <button class="button trick__button">
+                            <i class='bx bx-cart-alt trick__icon'></i>
+                        </button> -->
+                    </div>
+
+                    <div class="trick__content">
+                        <img src="assets/img/Anusha.jpg" alt="" class="trick__img">
+                        <h3 class="trick__title">Anusha Aligeti</h3>
+                        <span class="trick__subtitle">Back-End Developer</span>
+                        <!-- <span class="trick__price">$19.99</span>
+                        <button class="button trick__button">
+                            <i class='bx bx-cart-alt trick__icon'></i>
+                        </button> -->
+                    </div>
+
+                    <div class="trick__content">
+                        <img src="assets/img/trick-treat6-img.png" alt="" class="trick__img">
+                        <h3 class="trick__title">Weslee Hwang</h3>
+                        <span class="trick__subtitle">Back-End Developer</span>
+                        <!-- <span class="trick__price">$17.99</span>
+                        <button class="button trick__button">
+                            <i class='bx bx-cart-alt trick__icon'></i>
+                        </button> -->
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="section new" id="services">
+                <h2 class="section__title">SERVICES WE PROVIDE</h2>
+
+                <div class="new__container container">
+                    <div class="swiper new-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="new__content swiper-slide">
+                                <!-- <div class="new__tag">New</div> -->
+                                <img src="assets/img/globalretail.jpeg" alt="" class="new__img">
+                                <h3 class="new__title">Real-Time Monitoring System for Logistics Providers</h3>
+                                <span class="new__subtitle">
+                                    Designed specifically for logistics providers, our real-time tracking system ensures unparalleled visibility into shipments. Suitable for transporting diverse goods such as electronics, fashion, or machinery, this system keeps you informed with instant alerts on the status and condition of goods, enabling proactive management and decision-making.
+
+                                </span>
+                                
+                                <!-- <div class="new__prices">
+                                    <span class="new__price">$14.99</span>
+                                    <span class="new__discount">$29.99</span>
+                                </div>
+
+                                <button class="button new__button">
+                                    <i class='bx bx-cart-alt new__icon'></i>
+                                </button> -->
+                            </div>
+        
+                            <div class="new__content swiper-slide">
+                                <!-- <div class="new__tag">New</div> -->
+                                <img src="assets/img/LogLeaders.jpeg" alt="" class="new__img">
+                                <h3 class="new__title">Logistics Optimization Platform for Manufacturers</h3>
+                                <span class="new__subtitle">
+                                    EtherealTrade provides a sophisticated blockchain technology platform tailored for manufacturers across various industries.
+                                     This product enhances efficiency and transparency, enabling manufacturers to manage production and 
+                                     distribution more effectively and 
+                                    ensure a seamless supply chain operation without direct involvement in shipment handling.
+                                </span>
+        
+                                <!-- <div class="new__prices">
+                                    <span class="new__price">$11.99</span>
+                                    <span class="new__discount">$21.99</span>
+                                </div>
+
+                                <button class="button new__button">
+                                    <i class='bx bx-cart-alt new__icon'></i>
+                                </button> -->
+                            </div>
+        
+                            <div class="new__content swiper-slide">
+                                <!-- <div class="new__tag">New</div> -->
+                                <img src="assets/img/financeinsti.jpeg" alt="" class="new__img">
+                                <h3 class="new__title">Automated Compliance and Payment System for Exporters</h3>
+                                <span class="new__subtitle">
+                                    Exporters in sectors like pharmaceuticals and agriculture will benefit greatly from our automated compliance and payment system. This product uses smart contracts to streamline transactions, ensuring that all regulatory requirements are met promptly and securely, simplifying the complexities of international trade.
+
+                                </span>
+        
+                                <!-- <div class="new__prices">
+                                    <span class="new__price">$4.99</span>
+                                    <span class="new__discount">$9.99</span>
+                                </div>
+
+                                <button class="button new__button">
+                                    <i class='bx bx-cart-alt new__icon'></i>
+                                </button> -->
+                            </div>
+        
+                            
+                            <!-- <div class="new__content swiper-slide">
+                                <div class="new__tag">New</div>
+                                <img src="assets/img/new6-img.png" alt="" class="new__img">
+                                <h3 class="new__title">Witch Broom</h3>
+                                <span class="new__subtitle">Accessory</span>
+        
+                                <div class="new__prices">
+                                    <span class="new__price">$7.99</span>
+                                    <span class="new__discount">$14.99</span>
+                                </div>
+
+                                <button class="button new__button">
+                                    <i class='bx bx-cart-alt new__icon'></i>
+                                </button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== MARKET OPPORTUNITIES ====================-->
+            <section class="section new" id="marketoppo">
+                <h2 class="section__title">MARKET OPPORTUNITIES</h2>
+
+                <div class="new__container container">
+                    <div class="swiper new-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="new__content swiper-slide">
+                                <!-- <div class="new__tag">New</div> -->
+                                <img src="assets/img/pharma.jpg" alt="" class="new__img">
+                                <h3 class="new__title">Pharmaceutical Export Management</h3>
+                                <span class="new__subtitle">
+                                    A mid-sized pharmaceutical company in Germany grappled with the complexities of shipping temperature-sensitive vaccines worldwide. They turned to EtherealTrade's Automated Compliance and Payment System, which provided secure, real-time temperature monitoring and streamlined compliance processes. This technology ensured that every batch met stringent regulatory standards, improved payment efficiencies, and maintained the integrity of the vaccines throughout their journey, leading to safer and more reliable global distribution.
+
+
+                                </span>
+                            </div>
+        
+                            <div class="new__content swiper-slide">
+                                <!-- <div class="new__tag">New</div> -->
+                                <img src="assets/img/fashion.jpg" alt="" class="new__img">
+                                <h3 class="new__title">Fashion Retail Supply Chain Optimization</h3>
+                                <span class="new__subtitle">
+                                    A rapidly growing fashion retailer in the United States needed to enhance the efficiency of importing high-quality textiles from Southeast Asia. EtherealTrade's Logistics Optimization Platform allowed them to track shipments in real time, ensuring that all materials met their high standards for quality and timely delivery. The platform’s automated compliance features simplified the customs process, significantly reducing delays and overhead, which in turn optimized their supply chain and bolstered their market responsiveness.
+
+                                </span>
+                            </div>
+        
+                            <div class="new__content swiper-slide">
+                                <!-- <div class="new__tag">New</div> -->
+                                <img src="assets/img/electronic.jpg" alt="" class="new__img">
+                                <h3 class="new__title">Electronics Components Supply Chain Optimization</h3>
+                                <span class="new__subtitle">
+                                    A major electronics manufacturer in South Korea streamlined the export of sensitive electronic components to Europe and North America using EtherealTrade's Logistics Optimization Platform. This platform provided real-time tracking and automated compliance, ensuring all components met stringent quality standards while simplifying customs processes. The result was reduced delays, lower overhead, and enhanced global market responsiveness. This optimization not only improved operational efficiency but also boosted customer satisfaction by ensuring reliable and prompt delivery of high-quality components.
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SECURITY ====================-->
+            <section class="section newsletter" id="security">
+                <div class="newsletter__container container">
+                    <h2 class="section__title">HOW WE KEEP IT SECURE?</h2>
+                    <p class="newsletter__description">
+                        Our platform utilizes blockchain technology, ensuring secure and tamper-proof transactions through decentralization, immutability, and transparency.
+                    </p>
+                    <h2>Data Encryption</h2>
+                    <p>
+                        We employ advanced encryption techniques to safeguard user data both at rest and in transit, ensuring confidentiality and integrity.
+                    </p>
+                    <h2>Immutable Ledger</h2>
+                    <p>
+                        Our blockchain ledger records transactions immutably, preventing tampering and providing a transparent and trustworthy record of all activities.
+                    </p>
+                    <h2>Access Controls</h2>
+                    <p>
+                        Stringent access controls and authentication mechanisms restrict unauthorized access to sensitive information, enhancing overall platform security.
+                    </p>
+                    <h2>Real-time Monitoring</h2>
+                    <p>
+                        Continuous monitoring and anomaly detection enable us to promptly identify and mitigate security threats, ensuring a secure trading environment for all users.
+                    </p>
+                    <!-- <form action="" class="newsletter__form">
+                        <input type="text" placeholder="Enter your email" class="newsletter__input">
+                        <button class="button">
+                            Subscribe
+                        </button>
+                    </form> -->
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+            <footer class="footer section">
+                <div class="footer__container container grid">
+                    <div class="footer__content">
+                        <a href="#" class="footer__logo">
+                            <img src="assets/img/logo.jpg" alt="" class="footer__logo-img">
+                            EtherealTrade
+                        </a>
+
+                        <p class="footer__description">Take Control of your <br> own Supply Chain.</p>
+                        
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-instagram-alt' ></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-twitter' ></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">About</h3>
+                        
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Features</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">News</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="footer__content">
+                        <h3 class="footer__title">Our Services</h3>
+                        
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Discounts</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Shipping mode</a>
+                            </li>
+                        </ul>
+                    </div> -->
+
+                    <!-- <div class="footer__content">
+                        <h3 class="footer__title">Our Company</h3>
+                        
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">About us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Our mision</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+
+                <!-- <span class="footer__copy">&#169; Bedimcode. All rigths reserved</span> -->
+
+                <!-- <img src="assets/img/footer1-img.png" alt="" class="footer__img-one">
+                <img src="assets/img/footer2-img.png" alt="" class="footer__img-two"> -->
+            </footer>
+
+            <!--=============== SCROLL UP ===============-->
+            <a href="#" class="scrollup" id="scroll-up">
+                <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+            </a>
+        
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
